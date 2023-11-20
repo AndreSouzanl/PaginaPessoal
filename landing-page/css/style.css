@@ -97,6 +97,7 @@ main article #sobre p{
 .paragrafo{
     width: 90rem;
     margin: 0 auto;
+    text-align: center;
 }
 /* aqui todo estilo da section formação */
 main article #formacao{
