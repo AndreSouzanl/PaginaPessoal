@@ -1,0 +1,255 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #4F4F4F;
+    --color-segundary:#A9A9A9;
+    --color-white:#fff;
+    --bg-color:#363636;
+    --color-blue:#000
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+/* Abaixo todo estilo do Header da página */
+header{
+    padding: 1.9rem;
+    background-color: var(--color-segundary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 2.9rem;
+}
+
+header h1:hover{
+    background-color:var(--color-primary);
+    padding: 1rem;
+    color: var(--color-white);
+    border-radius: 1rem;
+}
+
+header nav ul{
+    display: flex;
+    gap:9.0rem;
+    margin-right: 2.5rem;
+    font-size:1.7rem
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+header nav ul a:hover{
+    background-color:var(--color-primary);
+    padding: 1rem;
+    color: var(--color-white);
+    border-radius: 1rem;
+}
+
+/* aqui começa os estilos das section */
+main article #sobre{
+   
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.9rem;
+    border:3px solid var(--color-segundary);
+   
+}
+
+main article #sobre h2{
+    font-size: 2.9rem;
+    font-size: 500;
+}
+
+main article #sobre figure img{
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 20rem;
+    margin: 1.5rem 0;
+    
+}
+
+main article #sobre p{
+    text-align: justify;
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+}
+.paragrafo{
+    width: 90rem;
+    margin: 0 auto;
+}
+/* aqui todo estilo da section formação */
+main article #formacao{
+  text-align: center;
+  color: var(--color-white);
+  padding: 1.9rem;
+   /* margin-top: 3.5rem; */
+}
+
+main article #formacao h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+main article #formacao p{
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 2.3rem;
+}
+
+/* aqui o estilo da section cursos */
+
+main article #cursos ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.9rem;
+    padding: 3rem;
+    width: 80rem;
+    margin: 0 auto;
+}
+main article #cursos ul li{
+    border: 0.2rem solid var(--color-white);
+    max-width:30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    
+}
+main article #cursos ul li img{
+    width:10rem;
+}
+
+main article #cursos ul li button{
+    margin-top: 1.7rem;
+    outline: none;
+    padding: 0.5rem;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    border: 1px solid var(--color-white);
+    border-radius: 0.3rem;
+}
+.degrade-button {
+    background: linear-gradient(-45deg, var(--color-primary),var(--color-segundary));
+}
+
+main article #cursos ul li button a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+
+/* aqui o estilo do rodape da pagina */
+
+footer{
+    background-color: var(--color-segundary);
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    
+}
+
+footer ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10.2rem;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    font-size: 1.9rem;
+    color:var(--color-primary)
+}
+
+footer ul li a:hover{
+
+    background-color:var(--color-primary);
+    padding: 1.0rem;
+    color: var(--color-white);
+    border-radius: 1rem;
+}
+
+footer ul li a i{
+    font-size: 2.0rem;
+}
+
+footer span{
+    display: block;
+   text-align: center;
+   max-width: 90rem;
+   margin: 0 auto;
+   margin-top: 1.5rem;
+   margin-bottom: 1.3rem;
+}
+
+footer span:hover{
+    background-color:var(--color-primary);
+    padding: 1.0rem;
+    color: var(--color-white);
+    border-radius: 1rem;
+}
+
+@media screen and (max-width:767px) {
+    header h1{
+        display: none;
+    }
+    
+    header nav ul{
+        display:flex;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+   main article #sobre{
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+    .paragrafo{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    main article #cursos ul{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
