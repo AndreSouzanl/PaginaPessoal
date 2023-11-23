@@ -248,6 +248,10 @@ footer span:hover{
         width: 100%;
     }
 
+    main article #formacao p{
+        text-align: justify;
+    }
+
     footer{
         width: 100%;
     }
